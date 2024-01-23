@@ -7,6 +7,10 @@
 
 body {
   background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -114,17 +118,17 @@ body {
   flex-direction: column;
 }
 
-.section-playlist__content .text {
+.text {
   padding: 14px;
   color: #fff;
   font-family: var(--font-padrao);
 }
 
-.section-playlist__content .title {
+.title {
   font-weight: 700;
 }
 
-.section-playlist__content .subtitle {
+.subtitle {
   font-weight: 500;
   font-size: 12px;
 }
@@ -172,4 +176,40 @@ body {
   margin: 8px;
   padding: 8px;
   border-radius: 20px;
+}
+
+footer {
+  margin-top: auto;
+  background: linear-gradient(to right, #AE2896, #519AF5);
+  color: white;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.footer__texto {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-padrao);
+  margin-right: 20px;
+}
+
+.footer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-padrao);
+  text-decoration: none;
+  text-transform: none;
+  padding: 12px 20px;
+  margin-top: 12px;
+  border: 0;
 }
